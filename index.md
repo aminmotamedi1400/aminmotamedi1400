@@ -23,4 +23,4 @@ title: Dashboard
   <a href="{{ ex.file | relative_url }}" class="button">Download File</a>
 </div>
 {% endfor %}
-<p style="text-align: right;"><a href="{{ '/exercises.html' | relative_url }}">View all exercises &rarr;</a></p>
+<p style="text-align: right;"><a href="{{ '/all-exercises.html' | relative_url }}">View all exercises &rarr;</a></p>

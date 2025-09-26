@@ -158,6 +158,30 @@ a:hover {
   color: var(--dark-gray);
 }
 
+.exercise-list-card {
+    /* Inherits general .card styles */
+    margin-bottom: 20px;
+}
+
+.exercise-list-card h3 {
+    margin-bottom: 10px;
+}
+
+.exercise-list-card h3 a {
+    color: #003366;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.exercise-list-card h3 a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.exercise-list-card .button {
+    margin-top: 15px;
+}
+
 
 /* --- 6. Footer --- */
 footer.site-footer {

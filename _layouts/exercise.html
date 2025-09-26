@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<main class="container">
+  <article class="exercise-detail">
+    <h2 class="exercise-title">{{ page.title }}</h2>
+    <p class="exercise-meta"><strong>Date:</strong> {{ page.date | date: "%Y-%m-%d" }}</p>
+    <p class="exercise-description">{{ page.description }}</p>
+
+    {% if page.file %}
+      <div class="exercise-download">
+        <a href="{{ page.file | relative_url }}" target="_blank" class="button">
+          Download Exercise File <i class="fas fa-download"></i> <!-- Font Awesome icon (optional) -->
+        </a>
+      </div>
+    {% endif %}
+
+    <hr> 
+
+    <div class="exercise-main-content">
+      {{ content }} 
+    </div>
+  </article>
+</main>

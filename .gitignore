@@ -1,1 +1,12 @@
- 
+bin
+cache
+gems
+specifications
+Gemfile
+Gemfile.lock
+extensions
+doc
+plugins
+build_info
+.jekyll-cache
+_site

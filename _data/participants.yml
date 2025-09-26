@@ -7,16 +7,28 @@
   role: "Head TA"
   photo: "head_ta.jpg"
   bio: "PhD student researching network analysis."
+  assigned_exercises:
+    - "Exercise 1: Network Centrality"
 
 - name: "[TA's Name]"
   role: "TA"
   photo: "ta1.jpg"
   bio: "MSc student interested in data mining."
+  assigned_exercises:
+    - "Exercise 2: Community Detection"
+- name: "[TA's Name]"
+  role: "TA"
+  photo: "ta1.jpg"
+  bio: "MSc student interested in data mining."
+  assigned_exercises:
+    - "Exercise 3: Graph Algorithms"
 
+    
 - name: "[Student's Name 1]"
   role: "Student"
   photo: "student1.jpg"
   bio: "Final year undergraduate student."
+  
 
 - name: "[Student's Name 2]"
   role: "Student"
