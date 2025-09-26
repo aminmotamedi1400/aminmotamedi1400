@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Exercises
+title: Course Exercises
 ---
 
 {% for ex in site.data.exercises %}
