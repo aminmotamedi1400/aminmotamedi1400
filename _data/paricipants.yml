@@ -1,0 +1,24 @@
+- name: "Dr. [Teacher's Name]"
+  role: "Teacher"
+  photo: "teacher.jpg" # Filename in assets/images/
+  bio: "Professor of Computer Science with a focus on social computing."
+
+- name: "[Head TA's Name]"
+  role: "Head TA"
+  photo: "head_ta.jpg"
+  bio: "PhD student researching network analysis."
+
+- name: "[TA's Name]"
+  role: "TA"
+  photo: "ta1.jpg"
+  bio: "MSc student interested in data mining."
+
+- name: "[Student's Name 1]"
+  role: "Student"
+  photo: "student1.jpg"
+  bio: "Final year undergraduate student."
+
+- name: "[Student's Name 2]"
+  role: "Student"
+  photo: "student2.jpg"
+  bio: "First year graduate student."
