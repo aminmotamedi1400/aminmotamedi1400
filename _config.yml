@@ -8,4 +8,3 @@ collections:
   exercises:
     output: true
     permalink: /exercises/:title/
-future: true
