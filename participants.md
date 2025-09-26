@@ -3,35 +3,29 @@ layout: default
 title: Participants
 ---
 
-## Teacher
+## Teaching Staff
 {% for person in site.data.participants %}
-  {% if person.role == "Teacher" %}
-    <img src="{{ '/assets/images/' | append: person.photo | relative_url }}" alt="{{ person.name }}" width="100">
-    <h3>{{ person.name }}</h3>
-    <p><i>{{ person.bio }}</i></p>
+  {% if person.role == "Teacher" or person.role == "Head TA" or person.role == "TA" %}
+    <div class="card staff-card">
+      <img src="{{ '/assets/images/' | append: person.photo | relative_url }}" alt="Photo of {{ person.name }}">
+      <div>
+        <h3>{{ person.name }}</h3>
+        <p class="meta">{{ person.role }}</p>
+        <p>{{ person.bio }}</p>
+      </div>
+    </div>
   {% endif %}
 {% endfor %}
 
-<hr>
-
-## Head TA & TAs
-{% for person in site.data.participants %}
-  {% if person.role == "Head TA" or person.role == "TA" %}
-    <img src="{{ '/assets/images/' | append: person.photo | relative_url }}" alt="{{ person.name }}" width="100">
-    <h3>{{ person.name }} ({{ person.role }})</h3>
-    <p><i>{{ person.bio }}</i></p>
-  {% endif %}
-{% endfor %}
-
-<hr>
+<br>
 
 ## Students
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+<div class="student-grid">
 {% for person in site.data.participants %}
   {% if person.role == "Student" %}
-    <div style="text-align: center;">
-      <img src="{{ '/assets/images/' | append: person.photo | relative_url }}" alt="{{ person.name }}" width="100" style="border-radius: 50%;">
-      <p>{{ person.name }}</p>
+    <div class="student-card">
+      <img src="{{ '/assets/images/' | append: person.photo | relative_url }}" alt="Photo of {{ person.name }}">
+      <div class="name">{{ person.name }}</div>
     </div>
   {% endif %}
 {% endfor %}
